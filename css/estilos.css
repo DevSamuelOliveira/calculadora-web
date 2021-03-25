@@ -42,16 +42,11 @@ body, html{
   border-collapse: collapse;
 }
 
-#table-calc button{
-}
-
 #table-calc td{
-  padding: 15px;
-  cursor: pointer
-}
-
-#table-calc caption{
-  color: white;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 #table-calc td:hover{
@@ -66,4 +61,24 @@ body, html{
 
 #table-calc thead td{
   height: 8vh;
+}
+
+.button-last{
+  background-color:white;
+  color: rgb(58, 58, 58);
+  font-size: 80%
+}
+
+#table-calc thead td{
+  cursor: default;
+}
+
+#table-calc thead td:hover{
+  background-color: azure;
+}
+
+#table-calc thead td:active{
+  background-color: azure;
+  position: static;
+  top: 0
 }
