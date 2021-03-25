@@ -47,4 +47,23 @@ body, html{
 
 #table-calc td{
   padding: 15px;
+  cursor: pointer
+}
+
+#table-calc caption{
+  color: white;
+}
+
+#table-calc td:hover{
+  background-color: rgb(214, 210, 210);
+}
+
+#table-calc td:active{
+  background-color: whitesmoke;
+  position: relative;
+  top: 0.1vh;
+}
+
+#table-calc thead td{
+  height: 8vh;
 }
