@@ -1,0 +1,24 @@
+:root{
+  --grey-main: rgb(100, 100, 100); 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  background-color: var(--grey-main);
+}
+
+#title-main{
+  background-color: whitesmoke;
+  font-family: sans-serif;
+  height: 7vh;
+  display: flex;
+}
+
+#title-main-1{
+  align-self: center;
+  margin: 0 auto;
+}
