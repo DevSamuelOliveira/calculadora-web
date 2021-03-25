@@ -43,7 +43,7 @@ body, html{
 }
 
 #table-calc td{
-  padding: 20px;
+  padding: 4vh 5vh;
   cursor: pointer;
   text-align: center;
   font-family: sans-serif;
@@ -60,7 +60,8 @@ body, html{
 }
 
 #table-calc thead td{
-  height: 8vh;
+  text-align: right;
+  height: 10vh;
 }
 
 .button-last{
