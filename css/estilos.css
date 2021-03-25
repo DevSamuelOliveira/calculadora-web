@@ -30,11 +30,21 @@ body, html{
 }
 
 #table-calc-main{
+  width: 100%;
   margin: auto;
   display:flex;
   justify-content:center;
 }
 
 #table-calc{
+  background-color: azure;
+  font-size: 3em;
+  border-collapse: collapse;
+}
 
+#table-calc button{
+}
+
+#table-calc td{
+  padding: 20px;
 }
