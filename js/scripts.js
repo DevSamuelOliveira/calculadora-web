@@ -34,9 +34,7 @@ buttons[1].cells[2].addEventListener("click", ()=>{
 })
 
 buttons[1].cells[3].addEventListener("click", ()=>{
-  if (checkSizeNumbers() == true){
-    buttons[0].cells[0].innerText += buttons[1].cells[3].innerText
-  }
+  buttons[0].cells[0].innerText = buttons[0].cells[0].innerText.slice(0, buttons[0].cells[0].innerText.length -1)
 })
 
 buttons[2].cells[0].addEventListener("click", ()=>{
