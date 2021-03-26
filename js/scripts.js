@@ -53,7 +53,15 @@ buttons[2].cells[2].addEventListener("click", ()=>{ //Botão limpar
 })
 
 buttons[2].cells[3].addEventListener("click", ()=>{ //Botão apagar 1 em 1
-  buttons[1].cells[0].innerText = buttons[1].cells[0].innerText.slice(0, buttons[1].cells[0].innerText.length -1)
+  if(buttons[1].cells[0].innerText != 0){
+    if(buttons[1].cells[0].innerText != 0 && buttons[1].cells[0].innerText.length == 1){
+      buttons[1].cells[0].innerText = 0
+    }
+    else{
+      buttons[1].cells[0].innerText = buttons[1].cells[0].innerText.slice(0, buttons[1].cells[0].innerText.length -1)
+    }
+  }
+ 
 })
 
 buttons[3].cells[0].addEventListener("click", ()=>{
