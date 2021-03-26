@@ -20,6 +20,12 @@ function checkSizeNumbers(){
       buttons[0].cells[0].innerText = troca
     }
 
+    else if(buttons[0].cells[0].innerText.length == 7){
+      let troca = buttons[0].cells[0].innerText
+      troca = troca[0] + '.' + troca.slice(1, 3) + troca[4] + '.' + troca.slice(5, troca.length)
+      buttons[0].cells[0].innerText = troca
+    }
+
     return true
   }
 }
