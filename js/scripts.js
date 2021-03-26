@@ -1,3 +1,5 @@
+var buttons = document.getElementById("table-calc").rows
+
 function checkSizeNumbers(){
   if(buttons[0].cells[0].innerText.length != 15){
     if(buttons[0].cells[0].innerText.length == 3){
@@ -10,12 +12,10 @@ function checkSizeNumbers(){
       let troca = buttons[0].cells[0].innerText
       troca = troca[0] + troca[2] + '.' + troca.slice(3, troca.length)
       buttons[0].cells[0].innerText = troca
-    }
+    } 
     return true
   }
 }
-
-var buttons = document.getElementById("table-calc").rows
 
 buttons[1].cells[0].addEventListener("click", ()=>{
   if (checkSizeNumbers() == true){

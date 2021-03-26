@@ -1,22 +1,4 @@
 document.onkeydown = escrever;
-var buttons = document.getElementById("table-calc").rows
-
-function checkSizeNumbers(){
-  if(buttons[0].cells[0].innerText.length != 15){
-    if(buttons[0].cells[0].innerText.length == 3){
-      let troca = buttons[0].cells[0].innerText
-      troca = troca[0] + '.' + troca[1] + troca.slice(2, troca.length)
-      buttons[0].cells[0].innerText = troca
-    }
-
-    else if(buttons[0].cells[0].innerText.length == 5){
-      let troca = buttons[0].cells[0].innerText
-      troca = troca[0] + troca[2] + '.' + troca.slice(3, troca.length)
-      buttons[0].cells[0].innerText = troca
-    }
-    return true
-  }
-}
 
 function escrever(key){
   if (key.keyCode === 48 || key.keyCode === 96){
