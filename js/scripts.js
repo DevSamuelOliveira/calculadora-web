@@ -4,7 +4,7 @@ function checkSizeNumbers(){
   if(buttons[0].cells[0].innerText.length != 15){
     if(buttons[0].cells[0].innerText.length == 3){
       let troca = buttons[0].cells[0].innerText
-      troca = troca[0] + '.' + troca[1] + troca.slice(2, troca.length)
+      troca = troca[0] + '.' + troca.slice(1, troca.length)
       buttons[0].cells[0].innerText = troca
     }
 
@@ -12,7 +12,14 @@ function checkSizeNumbers(){
       let troca = buttons[0].cells[0].innerText
       troca = troca[0] + troca[2] + '.' + troca.slice(3, troca.length)
       buttons[0].cells[0].innerText = troca
-    } 
+    }
+
+    else if(buttons[0].cells[0].innerText.length == 6){
+      let troca = buttons[0].cells[0].innerText
+      troca = troca.slice(0, 2) + troca[3] + '.' + troca.slice(4, troca.length)
+      buttons[0].cells[0].innerText = troca
+    }
+
     return true
   }
 }
